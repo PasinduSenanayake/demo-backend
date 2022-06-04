@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Pattern;
 
-
 import static com.powerorg.powerplant.util.Constant.DEFAULT_PAGE;
 import static com.powerorg.powerplant.util.Constant.DEFAULT_PAGE_SIZE;
 import static com.powerorg.powerplant.util.Constant.DEFAULT_POSTAL_RANGE;
