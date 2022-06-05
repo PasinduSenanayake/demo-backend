@@ -13,7 +13,9 @@
 
 ### Application
 
-* Utilizes and H2 In-memory database.
+* Developed and tested with Java 11.
+
+* Utilizes an H2 In-memory database.
 
 * The tables and database are automatically created with no data. 
 
