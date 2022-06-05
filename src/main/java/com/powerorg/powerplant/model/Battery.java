@@ -28,11 +28,11 @@ public class Battery {
     @Range(min = 1, message = "capacity must be a positive integer")
     private Integer capacity;
 
-    Battery() {
+    public Battery() {
 
     }
 
-    Battery(String name, String postcode, Integer capacity) {
+    public Battery(String name, String postcode, Integer capacity) {
         this.name = name;
         this.postcode = postcode;
         this.capacity = capacity;

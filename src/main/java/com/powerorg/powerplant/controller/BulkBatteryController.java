@@ -23,7 +23,7 @@ public class BulkBatteryController {
 
     private final BatteryService batteryService;
 
-    BulkBatteryController(BatteryService batteryService) {
+    public BulkBatteryController(BatteryService batteryService) {
         this.batteryService = batteryService;
     }
 

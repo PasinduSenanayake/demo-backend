@@ -29,7 +29,7 @@ public class BatteryController {
 
     private final BatteryService batteryService;
 
-    BatteryController(BatteryService batteryService) {
+    public BatteryController(BatteryService batteryService) {
         this.batteryService = batteryService;
     }
 
@@ -41,8 +41,8 @@ public class BatteryController {
     @GetMapping
     BatteryResponse getBatteries(
             @RequestParam(name = "post_code_range", defaultValue = DEFAULT_POSTAL_RANGE) @Pattern(regexp = "\\b\\d{4}\\b-\\b\\d{4}\\b", message = "post_code_range must match pattern 0000-9999") String postCodeRange,
-            @RequestParam(name = "page_size", defaultValue = DEFAULT_PAGE_SIZE) @Min(value= 1,message = "page_size must be a positive integer") int pageSize,
-            @RequestParam(name = "page", defaultValue = DEFAULT_PAGE) @Min(value= 1,message = "page_size must be a positive integer") int page
+            @RequestParam(name = "page_size", defaultValue = DEFAULT_PAGE_SIZE) @Min(value = 1, message = "page_size must be a positive integer") int pageSize,
+            @RequestParam(name = "page", defaultValue = DEFAULT_PAGE) @Min(value = 1, message = "page must be a positive integer") int page
     ) {
 
         String[] postRanges = postCodeRange.split("-");
