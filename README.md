@@ -8,7 +8,7 @@
 
 * A battery is not unique by the name.
 
-* The postal codes are only related to Australia. (4 Digits code with trailing zeros)
+* The postal codes are only related to Australia. (4 Digits code with leading zeros)
 
 
 ### Application
